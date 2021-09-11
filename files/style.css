@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    font-size: 30px;
+    overflow: hidden; /*hides the text until it is show*/
+    margin: 0 auto; /*keeps the scrolling effect while the typing is happening */
+    white-space: nowrap; /*keeps the content on a single line*/
+    border-right: 2px solid orange;
+    animation: typing 3s steps(12,end), infinite;
+}
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
